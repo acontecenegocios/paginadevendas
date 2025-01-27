@@ -1,14 +1,13 @@
-/* Resetando os estilos padrões para garantir consistência */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos do corpo e fundo */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f8f8; /* Fundo branco suave */
+    background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -19,210 +18,76 @@ body {
 header {
     text-align: center;
     margin-bottom: 20px;
-    background-color: #F40000; /* Vermelho do iFood */
+    background-color: #f44b4b;
     padding: 20px;
     border-radius: 8px;
     color: white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-    font-size: 2.8em;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-header h2 {
-    font-size: 1.7em;
-    color: #f7f7f7;
-    font-weight: 400;
-}
-
-/* Seção de categorias */
+/* Categorias */
 .categorias {
     margin-top: 30px;
-}
-
-.categorias h3 {
-    font-size: 2em;
-    color: #F40000; /* Vermelho vibrante */
-    margin-bottom: 20px;
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 700;
 }
 
-/* Lista de categorias principais */
-.categorias ul {
-    list-style-type: none;
-    padding-left: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+.subcategorias {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
-/* Estilo das categorias */
-.categorias li {
-    background-color: #fff; /* Fundo branco */
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 20px;
+.subcategorias li {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.categorias li:hover {
+.subcategorias li:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    background-color: #f1f1f1;
 }
 
-/* Links das categorias */
-.categorias li a {
+.subcategorias li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 1.1em;
-    display: block;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
 }
 
-.categorias li a:hover {
-    color: #F40000; /* Vermelho vibrante no hover */
+/* Banners */
+.banner-container {
+    margin: 20px 0;
+    text-align: center;
 }
 
-/* Subcategorias */
-.categorias li ul {
-    list-style-type: none;
-    padding-left: 20px;
-    margin-top: 10px;
+.banner {
+    background-color: #ccc;
+    height: 80px;
+    max-width: 100%;
+    margin: 0 auto;
+    animation: slide 5s infinite linear;
 }
 
-.categorias li ul li {
-    font-size: 0.9em;
-    font-weight: 400;
-    color: #555;
-}
-
-.categorias li ul li a {
-    color: #777;
-    text-decoration: none;
-    font-weight: normal;
-}
-
-.categorias li ul li a:hover {
-    color: #F40000;
-}
-
-/* Botões de ação */
-button {
-    background-color: #4CAF50; /* Verde para ação */
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #45a049;
-    transform: scale(1.1);
+@keyframes slide {
+    0%, 100% {
+        background-position: left;
+    }
+    50% {
+        background-position: right;
+    }
 }
 
 /* Rodapé */
 footer {
     text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #333; /* Fundo escuro para rodapé */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
     color: white;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-footer a {
-    color: #f4f4f4;
-    text-decoration: none;
-    font-weight: 600;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #F40000; /* Destacar com vermelho do iFood */
-}
-
-footer p {
-    margin-top: 10px;
-    font-size: 0.9em;
-}
-
-/* Adicionando responsividade */
-@media (max-width: 768px) {
-    .categorias ul {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    header h2 {
-        font-size: 1.5em;
-    }
-
-    .categorias li {
-        padding: 15px;
-    }
-}
-
-/* Ajustes adicionais para a visualização em paisagem (horizontal) */
-@media (max-width: 1024px) and (orientation: landscape) {
-    header h1 {
-        font-size: 2.3em; /* Ajustando o título para não ocupar muito espaço */
-    }
-
-    header h2 {
-        font-size: 1.4em;
-    }
-
-    footer {
-        padding: 10px;
-        font-size: 0.8em;
-    }
-
-    .categorias ul {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta a quantidade de itens por linha */
-    }
-}
-
-@media (max-width: 480px) {
-    .categorias ul {
-        grid-template-columns: 1fr;
-    }
-
-    header h1 {
-        font-size: 2.2em;
-    }
-
-    header h2 {
-        font-size: 1.4em;
-    }
-
-    .categorias li {
-        padding: 15px;
-    }
-
-    button {
-        width: 100%;
-    }
 }
