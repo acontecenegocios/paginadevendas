@@ -1,175 +1,67 @@
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Guia Acontece Negócios - Os Melhores Negócios de Itu">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Guia Acontece Negócios</title>
 </head>
 <body>
     <header>
+        <div class="logo-container"></div>
         <h1>Guia Acontece Negócios</h1>
         <h2>Os Melhores Negócios de Itu</h2>
     </header>
 
+    <!-- Banner superior -->
+    <div class="banner-container">
+        <div class="banner" id="banner-top"></div>
+    </div>
+
     <main>
-        <!-- Categorias -->
+        <!-- Subcategorias -->
         <section class="categorias">
-            <h3>Categorias</h3>
-            <ul>
-                <li>
-                    <a href="#"><i class="fas fa-utensils"></i> Alimentação</a>
-                    <ul class="subcategorias">
-                        <li><a href="restaurantes.html">Restaurantes</a></li>
-                        <li><a href="lanchonetes.html">Lanchonetes</a></li>
-                        <li><a href="#">Bares</a></li>
-                        <li><a href="#">Fast food</a></li>
-                        <li><a href="#">Delivery</a></li>
-                        <li><a href="#">Pizzarias</a></li>
-                        <li><a href="#">Cafeterias</a></li>
-                        <li><a href="#">Confeitarias</a></li>
-                        <li><a href="#">Docerias</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-car"></i> Automotivo</a>
-                    <ul class="subcategorias">
-                        <li><a href="#">Oficinas mecânicas</a></li>
-                        <li><a href="#">Autopeças</a></li>
-                        <li><a href="#">Lavagem de carro</a></li>
-                        <li><a href="#">Locadoras de veículos</a></li>
-                        <li><a href="#">Despachantes</a></li>
-                        <li><a href="#">Funilaria e pintura</a></li>
-                        <li><a href="#">Pneus e rodas</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-home"></i> Imóveis</a>
-                    <ul class="subcategorias">
-                        <li><a href="#">Compra e venda</a></li>
-                        <li><a href="#">Aluguel</a></li>
-                        <li><a href="#">Imobiliárias</a></li>
-                        <li><a href="#">Corretores</a></li>
-                        <li><a href="#">Serviços de reforma</a></li>
-                        <li><a href="#">Escritórios de arquitetura</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-tshirt"></i> Moda</a>
-                    <ul class="subcategorias">
-                        <li><a href="#">Roupas femininas</a></li>
-                        <li><a href="#">Roupas masculinas</a></li>
-                        <li><a href="#">Moda infantil</a></li>
-                        <li><a href="#">Acessórios</a></li>
-                        <li><a href="#">Lingerie</a></li>
-                        <li><a href="#">Sapatos</a></li>
-                        <li><a href="#">Joias e bijuterias</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-spa"></i> Beleza e Estética</a>
-                    <ul class="subcategorias">
-                        <li><a href="#">Salões de beleza</a></li>
-                        <li><a href="#">Barbearias</a></li>
-                        <li><a href="#">Spas e clínicas de estética</a></li>
-                        <li><a href="#">Maquiagem e cosméticos</a></li>
-                        <li><a href="#">Depilação</a></li>
-                        <li><a href="#">Manicure e pedicure</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-hospital"></i> Saúde</a>
-                    <ul class="subcategorias">
-                        <li><a href="#">Clínicas médicas</a></li>
-                        <li><a href="#">Dentistas</a></li>
-                        <li><a href="#">Farmácias</a></li>
-                        <li><a href="#">Psicólogos</a></li>
-                        <li><a href="#">Nutricionistas</a></li>
-                        <li><a href="#">Ópticas</a></li>
-                        <li><a href="#">Academias de ginástica</a></li>
-                        <li><a href="#">Estúdios de pilates</a></li>
-                        <li><a href="#">Clínicas de fisioterapia</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-book"></i> Educação</a>
-                    <ul class="subcategorias">
-                        <li><a href="#">Escolas e creches</a></li>
-                        <li><a href="#">Cursos profissionalizantes</a></li>
-                        <li><a href="#">Idiomas</a></li>
-                        <li><a href="#">Aulas particulares</a></li>
-                        <li><a href="#">Pré-escolas</a></li>
-                        <li><a href="#">Cursos online</a></li>
-                        <li><a href="#">Escolas de música</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-laptop"></i> Tecnologia</a>
-                    <ul class="subcategorias">
-                        <li><a href="#">Informática</a></li>
-                        <li><a href="#">Lojas de eletrônicos</a></li>
-                        <li><a href="#">Consultorias de TI</a></li>
-                        <li><a href="#">Desenvolvimento de software</a></li>
-                        <li><a href="#">Manutenção de computadores</a></li>
-                        <li><a href="#">Serviços de hospedagem de sites</a></li>
-                        <li><a href="#">Desenvolvimento web</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-store"></i> Varejo</a>
-                    <ul class="subcategorias">
-                        <li><a href="#">Lojas de roupas</a></li>
-                        <li><a href="#">Lojas de calçados</a></li>
-                        <li><a href="#">Lojas de brinquedos</a></li>
-                        <li><a href="#">Lojas de decoração</a></li>
-                        <li><a href="#">Lojas de móveis</a></li>
-                        <li><a href="#">Lojas de eletrônicos</a></li>
-                        <li><a href="#">Lojas de utilidades domésticas</a></li>
-                        <li><a href="#">Supermercados</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-broom"></i> Serviços Gerais</a>
-                    <ul class="subcategorias">
-                        <li><a href="#">Limpeza residencial e comercial</a></li>
-                        <li><a href="#">Jardinagem e paisagismo</a></li>
-                        <li><a href="#">Reparos domésticos</a></li>
-                        <li><a href="#">Marcenaria</a></li>
-                        <li><a href="#">Elétrica e hidráulica</a></li>
-                        <li><a href="#">Chaveiros</a></li>
-                        <li><a href="#">Pedreiros</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-suitcase"></i> Turismo e Lazer</a>
-                    <ul class="subcategorias">
-                        <li><a href="#">Hotéis</a></li>
-                        <li><a href="#">Pousadas</a></li>
-                        <li><a href="#">Agências de viagens</a></li>
-                        <li><a href="#">Transporte turístico</a></li>
-                        <li><a href="#">Parques de diversão</a></li>
-                        <li><a href="#">Turismo de aventura</a></li>
-                        <li><a href="#">Guias turísticos</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-birthday-cake"></i> Eventos e Festas</a>
-                    <ul class="subcategorias">
-                        <li><a href="#">Buffets e espaços para festas</a></li>
-                        <li><a href="#">Decoração de eventos</a></li>
-                        <li><a href="#">Locação de equipamentos</a></li>
-                        <li><a href="#">Organização de eventos</a></li>
-                        <li><a href="#">Animação e entretenimento</a></li>
-                    </ul>
-                </li>
+            <ul class="subcategorias">
+                <li><a href="academias.html"><i class="fas fa-dumbbell"></i> Academia</a></li>
+                <li><a href="adegasetabacarias.html"><i class="fas fa-wine-glass-alt"></i> Adegas e Tabacaria</a></li>
+                <li><a href="alinhamentoebalanceamento.html"><i class="fas fa-car"></i> Alinhamento e Balanceamento</a></li>
+                <li><a href="apartamentonaplanta.html"><i class="fas fa-building"></i> Apartamentos na Planta</a></li>
+                <li><a href="autoeletrica.html"><i class="fas fa-bolt"></i> Auto Elétrica</a></li>
+                <li><a href="barbearia.html"><i class="fas fa-cut"></i> Barbearia</a></li>
+                <li><a href="brechochic.html"><i class="fas fa-tshirt"></i> Brechó Chic</a></li>
+                <li><a href="cestasdepresentes.html"><i class="fas fa-gift"></i> Cestas de Presentes</a></li>
+                <li><a href="centroderecreacao.html"><i class="fas fa-home"></i> Centro de Recreação</a></li>
+                <li><a href="correspondentesbancarios.html"><i class="fas fa-university"></i> Corresp. Bancário</a></li>
+                <li><a href="desmanches.html"><i class="fas fa-tools"></i> Desmanches</a></li>
+                <li><a href="empilhadeira.html"><i class="fas fa-cogs"></i> Empilhadeiras</a></li>
+                <li><a href="emprestimos.html"><i class="fas fa-credit-card"></i> Empréstimos</a></li>
+                <li><a href="esteticaautomotiva.html"><i class="fas fa-car-alt"></i> Estética Automotiva</a></li>
+                <li><a href="esteticaemassoterapia.html"><i class="fas fa-spa"></i> Estética e Massoterapia</a></li>
+                <li><a href="flores"><i class="fas fa-seedling"></i> Flores e Decoração</a></li>
+                <li><a href="#"><i class="fas fa-gavel"></i> Leilão de Imóveis</a></li>
+                <li><a href="maquinasdelavar.html"><i class="fas fa-tshirt"></i> Máquinas de Lavar</a></li>
+                <li><a href="materialdeconstrucao.html"><i class="fas fa-hammer"></i> Material de Construção</a></li>
+                <li><a href="moveisplanejados.html"><i class="fas fa-couch"></i> Móveis Planejados</a></li>
+                <li><a href="oticas.html"><i class="fas fa-glasses"></i> Óticas</a></li>
+                <li><a href="pastelarias.html"><i class="fas fa-utensils"></i> Pastelarias</a></li>
+                <li><a href="pizzarias.html"><i class="fas fa-pizza-slice"></i> Pizzarias</a></li>
+                <li><a href="seguros.html"><i class="fas fa-shield-alt"></i> Seguros</a></li>
             </ul>
         </section>
     </main>
 
+    <!-- Banner inferior -->
+    <div class="banner-container">
+        <div class="banner" id="banner-bottom"></div>
+    </div>
+
     <footer>
         <p>&copy; 2024 Guia Acontece Negócios - Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
