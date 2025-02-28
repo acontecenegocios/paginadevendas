@@ -1,67 +1,377 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Guia Acontece Negócios - Os Melhores Negócios de Itu">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <title>Guia Acontece Negócios</title>
+    <title>Luis Nomura - Fotografia Profissional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Slab', serif;
+        }
+        body {
+            background-color: #111;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            padding: 20px;
+            font-size: 60px;
+            font-weight: bold;
+            color: white;
+        }
+        .header-description {
+            font-size: 60px;
+            color: #FF0000;
+            margin-top: 10px;
+        }
+        .header-slogan {
+            font-size: 24px;
+            font-style: italic;
+            color: white;
+            margin-top: 10px;
+        }
+        .video-container {
+            margin: 20px 0;
+        }
+        .section-title {
+            font-size: 36px;
+            color: white;
+            font-weight: bold;
+            margin: 40px 0 20px;
+        }
+        .section-title i {
+            color: white;
+            margin-right: 10px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .grid-item {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        .grid-item img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .grid-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .grid-item p {
+            font-size: 16px;
+        }
+        .grid-item video {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            padding: 15px 20px;
+            background: #25D366;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .whatsapp-btn:hover {
+            background: #1EBE5D;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 24px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .testimonial-item {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        .testimonial-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .testimonial-item h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .testimonial-item p {
+            font-size: 14px;
+            font-style: italic;
+            color: #ccc;
+        }
+        footer {
+            background: #222;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer-links a {
+            display: inline-block;
+            margin: 10px;
+            color: #25D366;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #FF0000;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header {
+                font-size: 40px;
+            }
+            .header-description {
+                font-size: 40px;
+            }
+            .header-slogan {
+                font-size: 18px;
+            }
+            .grid-container {
+                grid-template-columns: 1fr 1fr;
+            }
+            .grid-item img {
+                width: 70%;
+            }
+            .grid-item h3 {
+                font-size: 18px;
+            }
+            .grid-item p {
+                font-size: 14px;
+            }
+            .section-title {
+                font-size: 28px;
+            }
+            .whatsapp-btn {
+                font-size: 16px;
+                padding: 12px 15px;
+            }
+            .testimonial-item img {
+                width: 60px;
+                height: 60px;
+            }
+            .testimonial-item h3 {
+                font-size: 16px;
+            }
+            .testimonial-item p {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 30px;
+            }
+            .header-description {
+                font-size: 30px;
+            }
+            .header-slogan {
+                font-size: 16px;
+            }
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+            .grid-item img {
+                width: 80%;
+            }
+            .section-title {
+                font-size: 24px;
+            }
+            .whatsapp-btn {
+                font-size: 14px;
+                padding: 10px 12px;
+            }
+            .testimonial-item img {
+                width: 50px;
+                height: 50px;
+            }
+            .testimonial-item h3 {
+                font-size: 14px;
+            }
+            .testimonial-item p {
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo-container"></div>
-        <h1>Guia Acontece Negócios</h1>
-        <h2>Os Melhores Negócios de Itu</h2>
-    </header>
+    <div class="container">
+        <header>
+            Luis Nomura <i class="fas fa-camera"></i>
+            <div class="header-description">Fotografia Profissional</div>
+            <div class="header-slogan">Fotógrafo profissional especializado em capturar momentos inesquecíveis!</div>
+        </header>
 
-    <!-- Banner superior -->
-    <div class="banner-container">
-        <div class="banner" id="banner-top"></div>
-    </div>
+        <div class="video-container">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/SEU_VIDEO_AQUI" frameborder="0" allowfullscreen></iframe>
+        </div>
 
-    <main>
-        <!-- Subcategorias -->
-        <section class="categorias">
-            <ul class="subcategorias">
-                <li><a href="academias.html"><i class="fas fa-dumbbell"></i> Academia</a></li>
-                <li><a href="adegasetabacarias.html"><i class="fas fa-wine-glass-alt"></i> Adegas e Tabacaria</a></li>
-                <li><a href="alinhamentoebalanceamento.html"><i class="fas fa-car"></i> Alinhamento e Balanceamento</a></li>
-                <li><a href="apartamentonaplanta.html"><i class="fas fa-building"></i> Apartamentos na Planta</a></li>
-                <li><a href="autoeletrica.html"><i class="fas fa-bolt"></i> Auto Elétrica</a></li>
-                <li><a href="barbearia.html"><i class="fas fa-cut"></i> Barbearia</a></li>
-                <li><a href="brechochic.html"><i class="fas fa-tshirt"></i> Brechó Chic</a></li>
-                <li><a href="cestasdepresentes.html"><i class="fas fa-gift"></i> Cestas de Presentes</a></li>
-                <li><a href="centroderecreacao.html"><i class="fas fa-home"></i> Centro de Recreação</a></li>
-                <li><a href="correspondentesbancarios.html"><i class="fas fa-university"></i> Corresp. Bancário</a></li>
-                <li><a href="desmanches.html"><i class="fas fa-tools"></i> Desmanches</a></li>
-                <li><a href="empilhadeira.html"><i class="fas fa-cogs"></i> Empilhadeiras</a></li>
-                <li><a href="emprestimos.html"><i class="fas fa-credit-card"></i> Empréstimos</a></li>
-                <li><a href="esteticaautomotiva.html"><i class="fas fa-car-alt"></i> Estética Automotiva</a></li>
-                <li><a href="esteticaemassoterapia.html"><i class="fas fa-spa"></i> Estética e Massoterapia</a></li>
-                <li><a href="flores"><i class="fas fa-seedling"></i> Flores e Decoração</a></li>
-                <li><a href="#"><i class="fas fa-gavel"></i> Leilão de Imóveis</a></li>
-                <li><a href="maquinasdelavar.html"><i class="fas fa-tshirt"></i> Máquinas de Lavar</a></li>
-                <li><a href="materialdeconstrucao.html"><i class="fas fa-hammer"></i> Material de Construção</a></li>
-                <li><a href="moveisplanejados.html"><i class="fas fa-couch"></i> Móveis Planejados</a></li>
-                <li><a href="oticas.html"><i class="fas fa-glasses"></i> Óticas</a></li>
-                <li><a href="pastelarias.html"><i class="fas fa-utensils"></i> Pastelarias</a></li>
-                <li><a href="pizzarias.html"><i class="fas fa-pizza-slice"></i> Pizzarias</a></li>
-                <li><a href="seguros.html"><i class="fas fa-shield-alt"></i> Seguros</a></li>
-            </ul>
-        </section>
-    </main>
+        <a href="https://wa.me/SEU_NUMERO" class="whatsapp-btn">Fale Comigo no WhatsApp</a>
 
-    <!-- Banner inferior -->
-    <div class="banner-container">
-        <div class="banner" id="banner-bottom"></div>
+        <!-- SEÇÃO DE SERVIÇOS -->
+        <h2 class="section-title"><i class="fas fa-concierge-bell"></i> Nossos Serviços</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="casamento.jpeg" alt="Fotografia de Casamentos">
+                <h3>Fotografia de Casamentos</h3>
+                <p>Cobertura completa de cerimônias e recepções.</p>
+            </div>
+            <div class="grid-item">
+                <img src="ensaio.jpeg" alt="Ensaios Fotográficos">
+                <h3>Ensaios Fotográficos</h3>
+                <p>Ensaios de noivos, gestantes e famílias.</p>
+            </div>
+            <div class="grid-item">
+                <img src="evento.jpeg" alt="Cobertura de Eventos">
+                <h3>Cobertura de Eventos</h3>
+                <p>Fotos para festas e eventos corporativos.</p>
+            </div>
+            <div class="grid-item">
+                <img src="produto.jpeg" alt="Fotografia Comercial">
+                <h3>Fotografia Comercial</h3>
+                <p>Fotos para publicidade e empresas.</p>
+            </div>
+            <div class="grid-item">
+                <img src="moda.jpeg" alt="Fotografia de Moda">
+                <h3>Fotografia de Moda</h3>
+                <p>Ensaios para editoriais e catálogos.</p>
+            </div>
+            <div class="grid-item">
+                <img src="imovel.jpeg" alt="Fotografia Imobiliária">
+                <h3>Fotografia Imobiliária</h3>
+                <p>Fotos profissionais de imóveis.</p>
+            </div>
+        </div>
+
+        <!-- SEÇÃO DE PORTFÓLIO -->
+        <h2 class="section-title"><i class="fas fa-video"></i> Portfólio</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+                <h3>Making Of Casamento</h3>
+            </div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+                <h3>Ensaio de Gestante</h3>
+            </div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="video3.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+                <h3>Evento Empresarial</h3>
+            </div>
+        </div>
+
+        <!-- SEÇÃO DE DEPOIMENTOS -->
+        <h2 class="section-title"><i class="fas fa-comments"></i> Depoimentos</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-item">
+                <img src="avatar1.jpeg" alt="Cliente 1">
+                <h3>Ana Souza</h3>
+                <p>"As fotos do meu casamento ficaram incríveis! Capturaram cada momento especial com perfeição."</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="avatar2.jpeg" alt="Cliente 2">
+                <h3>Marcos Oliveira</h3>
+                <p>"O ensaio fotográfico foi maravilhoso, super profissional e atencioso. Recomendo a todos!"</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="avatar3.jpeg" alt="Cliente 3">
+                <h3>Carla Mendes</h3>
+                <p>"Adorei as fotos do meu evento! Qualidade impecável e entregues no prazo combinado."</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="avatar4.jpeg" alt="Cliente 4">
+                <h3>João Ribeiro</h3>
+                <p>"Nunca me senti tão à vontade durante uma sessão de fotos! Serviço de excelência!"</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="avatar5.jpeg" alt="Cliente 5">
+                <h3>Fernanda Lima</h3>
+                <p>"Recomendo 100%! Fotos incríveis e um atendimento maravilhoso. Vale muito a pena!"</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="avatar6.jpeg" alt="Cliente 6">
+                <h3>Ricardo Santos</h3>
+                <p>"As fotos do meu aniversário ficaram perfeitas! Trabalho sensacional e muito profissional."</p>
+            </div>
+        </div>
+
+        <a href="https://wa.me/SEU_NUMERO" class="whatsapp-btn">Fale Comigo no WhatsApp</a>
+
+        <div class="social-icons">
+            <a href="https://instagram.com/SEU_INSTAGRAM" class="fab fa-instagram"></a>
+            <a href="https://facebook.com/SEU_FACEBOOK" class="fab fa-facebook"></a>
+            <a href="https://skype.com/SEU_SKYPE" class="fab fa-skype"></a>
+            <a href="https://telegram.me/SEU_TELEGRAM" class="fab fa-telegram"></a>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Guia Acontece Negócios - Todos os direitos reservados.</p>
+        <p>&copy; 2025 Luis Nomura - Fotografia Profissional. Todos os direitos reservados.</p>
+        <p>Página criada por Climbers - Negócios e Cia</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
