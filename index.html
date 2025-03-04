@@ -58,7 +58,6 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            justify-items: center; /* Alinha os itens no centro */
         }
         .grid-item {
             background: #222;
@@ -87,10 +86,10 @@
         }
         .whatsapp-btn {
             display: inline-block;
-            padding: 25px 40px; /* Aumentei o tamanho do botão */
+            padding: 20px 30px;
             background: #25D366;
             color: white;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: bold;
             border-radius: 5px;
             text-decoration: none;
@@ -120,7 +119,6 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            justify-items: center; /* Alinha os itens no centro */
         }
         .testimonial-item {
             background: #222;
@@ -187,7 +185,7 @@
                 font-size: 20px;
             }
             .grid-container {
-                grid-template-columns: 1fr 1fr; /* Mudei para 2 colunas em dispositivos móveis */
+                grid-template-columns: 1fr 1fr;
             }
             .grid-item img {
                 width: 70%;
@@ -203,7 +201,7 @@
             }
             .whatsapp-btn {
                 font-size: 18px;
-                padding: 20px 30px; /* Aumentei o tamanho do botão no celular */
+                padding: 15px 20px;
             }
             .testimonial-item img {
                 width: 70px;
@@ -228,7 +226,7 @@
                 font-size: 18px;
             }
             .grid-container {
-                grid-template-columns: 1fr; /* Mudei para uma coluna em telas menores */
+                grid-template-columns: 1fr;
             }
             .grid-item img {
                 width: 80%;
@@ -238,7 +236,7 @@
             }
             .whatsapp-btn {
                 font-size: 16px;
-                padding: 18px 25px; /* Aumentei o tamanho do botão no celular */
+                padding: 12px 15px;
             }
             .testimonial-item img {
                 width: 50px;
@@ -305,6 +303,17 @@
             </div>
         </div>
 
+        <!-- SEÇÃO DE PORTFÓLIO -->
+        <h2 class="section-title"><i class="fas fa-video"></i> Portfólio</h2>
+        <div class="grid-container" style="display: flex; justify-content: center; align-items: center;">
+            <div class="grid-item" style="text-align: center;">
+                <video autoplay loop muted style="max-width: 100%; border-radius: 10px;">
+                    <source src="video1.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+            </div>
+        </div>
+
         <!-- SEÇÃO DE DEPOIMENTOS -->
         <h2 class="section-title"><i class="fas fa-comments"></i> Depoimentos</h2>
         <div class="testimonials-container">
@@ -341,21 +350,18 @@
         </div>
 
         <a href="https://wa.me/SEU_NUMERO" class="whatsapp-btn">Atendimento via WhatsApp</a>
-    </div>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 Luis Nomura - Fotografia Profissional. Todos os direitos reservados.</p>
-        <div class="footer-links">
-            <a href="https://instagram.com/SEU_INSTAGRAM">Instagram</a>
-            <a href="https://facebook.com/SEU_FACEBOOK">Facebook</a>
-            <a href="https://twitter.com/SEU_TWITTER">Twitter</a>
-        </div>
         <div class="social-icons">
             <a href="https://instagram.com/SEU_INSTAGRAM" class="fab fa-instagram"></a>
-            <a href="https://facebook.com/SEU_FACEBOOK" class="fab fa-facebook-f"></a>
-            <a href="https://twitter.com/SEU_TWITTER" class="fab fa-twitter"></a>
+            <a href="https://facebook.com/SEU_FACEBOOK" class="fab fa-facebook"></a>
+            <a href="https://skype.com/SEU_SKYPE" class="fab fa-skype"></a>
+            <a href="https://telegram.me/SEU_TELEGRAM" class="fab fa-telegram"></a>
         </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Luis Nomura - Fotografia Profissional. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Climbers - Business & Cia</p>
     </footer>
 </body>
 </html>
