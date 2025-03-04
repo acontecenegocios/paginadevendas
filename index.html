@@ -176,13 +176,13 @@
         /* Responsividade */
         @media (max-width: 768px) {
             header {
-                font-size: 50px;
+                font-size: 60px; /* Aumentado para mais visível em telas médias */
             }
             .header-description {
-                font-size: 50px;
+                font-size: 60px; /* Aumentado para mais visível em telas médias */
             }
             .header-slogan {
-                font-size: 20px;
+                font-size: 24px; /* Ajustado para não ficar pequeno em telas médias */
             }
             .grid-container {
                 grid-template-columns: 1fr 1fr;
@@ -191,39 +191,39 @@
                 width: 70%;
             }
             .grid-item h3 {
-                font-size: 22px;
+                font-size: 26px; /* Aumentado para melhor legibilidade */
             }
             .grid-item p {
-                font-size: 16px;
+                font-size: 18px; /* Aumentado para melhor legibilidade */
             }
             .section-title {
-                font-size: 36px;
+                font-size: 40px; /* Aumentado para garantir boa visibilidade */
             }
             .whatsapp-btn {
-                font-size: 18px;
-                padding: 15px 20px;
+                font-size: 20px; /* Aumentado para ser mais legível em dispositivos móveis */
+                padding: 18px 22px;
             }
             .testimonial-item img {
-                width: 70px;
-                height: 70px;
+                width: 80px;
+                height: 80px;
             }
             .testimonial-item h3 {
-                font-size: 20px;
+                font-size: 22px; /* Aumentado para mais visível em telas pequenas */
             }
             .testimonial-item p {
-                font-size: 14px;
+                font-size: 16px; /* Melhor legibilidade para depoimentos */
             }
         }
 
         @media (max-width: 480px) {
             header {
-                font-size: 35px;
+                font-size: 40px; /* Aumentado para mais visível em telas menores */
             }
             .header-description {
-                font-size: 35px;
+                font-size: 40px; /* Aumentado para mais visível em telas menores */
             }
             .header-slogan {
-                font-size: 18px;
+                font-size: 22px; /* Ajustado para ficar melhor em telas menores */
             }
             .grid-container {
                 grid-template-columns: 1fr;
@@ -232,21 +232,21 @@
                 width: 80%;
             }
             .section-title {
-                font-size: 28px;
+                font-size: 32px; /* Aumentado para maior visibilidade */
             }
             .whatsapp-btn {
-                font-size: 16px;
-                padding: 12px 15px;
+                font-size: 18px; /* Aumentado para mais legível */
+                padding: 16px 20px;
             }
             .testimonial-item img {
-                width: 50px;
-                height: 50px;
+                width: 60px;
+                height: 60px;
             }
             .testimonial-item h3 {
-                font-size: 18px;
+                font-size: 20px; /* Aumentado para mais visível */
             }
             .testimonial-item p {
-                font-size: 14px;
+                font-size: 16px; /* Melhor legibilidade */
             }
         }
     </style>
@@ -299,69 +299,42 @@
             <div class="grid-item">
                 <img src="imovel.jpeg" alt="Fotografia Imobiliária">
                 <h3>Fotografia Imobiliária</h3>
-                <p>Fotos profissionais de imóveis.</p>
+                <p>Imagens de alta qualidade para imóveis.</p>
             </div>
         </div>
 
-        <!-- SEÇÃO DE PORTFÓLIO -->
-        <h2 class="section-title"><i class="fas fa-video"></i> Portfólio</h2>
-        <div class="grid-container" style="display: flex; justify-content: center; align-items: center;">
-            <div class="grid-item" style="text-align: center;">
-                <video autoplay loop muted style="max-width: 100%; border-radius: 10px;">
-                    <source src="video1.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeos.
-                </video>
-            </div>
-        </div>
-
-        <!-- SEÇÃO DE DEPOIMENTOS -->
-        <h2 class="section-title"><i class="fas fa-comments"></i> Depoimentos</h2>
+        <h2 class="section-title"><i class="fas fa-comment-alt"></i>Depoimentos</h2>
         <div class="testimonials-container">
             <div class="testimonial-item">
-                <img src="avatar1.jpeg" alt="Cliente 1">
-                <h3>Ana Souza</h3>
-                <p>"As fotos do meu casamento ficaram incríveis! Capturaram cada momento especial com perfeição."</p>
+                <img src="cliente1.jpg" alt="Cliente">
+                <h3>Mariana Souza</h3>
+                <p>“O trabalho do Luis foi incrível! Ele capturou todos os momentos do meu casamento com tanta emoção!”</p>
             </div>
             <div class="testimonial-item">
-                <img src="avatar2.jpeg" alt="Cliente 2">
-                <h3>Marcos Oliveira</h3>
-                <p>"O ensaio fotográfico foi maravilhoso, super profissional e atencioso. Recomendo a todos!"</p>
+                <img src="cliente2.jpg" alt="Cliente">
+                <h3>Rodrigo Lima</h3>
+                <p>“Excelente fotógrafo, super profissional e atencioso! As fotos ficaram sensacionais!”</p>
             </div>
             <div class="testimonial-item">
-                <img src="avatar3.jpeg" alt="Cliente 3">
-                <h3>Carla Mendes</h3>
-                <p>"Adorei as fotos do meu evento! Qualidade impecável e entregues no prazo combinado."</p>
-            </div>
-            <div class="testimonial-item">
-                <img src="avatar4.jpeg" alt="Cliente 4">
-                <h3>João Ribeiro</h3>
-                <p>"Nunca me senti tão à vontade durante uma sessão de fotos! Serviço de excelência!"</p>
-            </div>
-            <div class="testimonial-item">
-                <img src="avatar5.jpeg" alt="Cliente 5">
-                <h3>Fernanda Lima</h3>
-                <p>"Recomendo 100%! Fotos incríveis e um atendimento maravilhoso. Vale muito a pena!"</p>
-            </div>
-            <div class="testimonial-item">
-                <img src="avatar6.jpeg" alt="Cliente 6">
-                <h3>Ricardo Santos</h3>
-                <p>"As fotos do meu aniversário ficaram perfeitas! Trabalho sensacional e muito profissional."</p>
+                <img src="cliente3.jpg" alt="Cliente">
+                <h3>Ana Beatriz</h3>
+                <p>“Um dos melhores fotógrafos que já trabalhei! As fotos do meu evento ficaram incríveis!”</p>
             </div>
         </div>
 
-        <a href="https://wa.me/SEU_NUMERO" class="whatsapp-btn">Atendimento via WhatsApp</a>
-
-        <div class="social-icons">
-            <a href="https://instagram.com/SEU_INSTAGRAM" class="fab fa-instagram"></a>
-            <a href="https://facebook.com/SEU_FACEBOOK" class="fab fa-facebook"></a>
-            <a href="https://skype.com/SEU_SKYPE" class="fab fa-skype"></a>
-            <a href="https://telegram.me/SEU_TELEGRAM" class="fab fa-telegram"></a>
-        </div>
+        <footer>
+            <p>&copy; 2025 Luis Nomura Fotografia Profissional. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="https://facebook.com">Facebook</a>
+                <a href="https://instagram.com">Instagram</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
     </div>
-
-    <footer>
-        <p>&copy; 2025 Luis Nomura - Fotografia Profissional. Todos os direitos reservados.</p>
-        <p>Desenvolvido por Climbers - Business & Cia</p>
-    </footer>
 </body>
 </html>
